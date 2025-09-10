@@ -1,0 +1,39 @@
+# === Rust ===
+target/
+**/*.rs.bk
+**/*.rs.swp
+
+# === C / C++ ===
+**/*.o
+**/*.a
+**/*.so
+**/*.dll
+**/*.dylib
+**/*.exe
+build/
+cmake-build-*/
+Makefile
+CMakeCache.txt
+CMakeFiles/
+
+# === Common ===
+.git
+.gitignore
+.gitattributes
+.dockerignore
+Dockerfile
+*.log
+*.tmp
+*.swp
+*.bak
+*.cache
+*.lock
+
+# === IDE/Editor ===
+.vscode/
+.idea/
+*.iml
+
+# === OS ===
+.DS_Store
+Thumbs.db
