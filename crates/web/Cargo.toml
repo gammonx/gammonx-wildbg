@@ -22,6 +22,7 @@ tower = "*"
 utoipa = { workspace = true, features = ["axum_extras", "preserve_order"] }
 utoipa-swagger-ui = { version = "9", features = ["axum"] }
 clap = { version = "4.5.2", features = ["derive"] }
+env = "1.0.1"
 
 [dev-dependencies]
 http-body-util = "0.1.0"
