@@ -14,7 +14,7 @@ async fn main() {
 
     // Read address & log links
     let web_address = startup::get_web_address(&Args::parse());
-    log_server_links(&web_address);
+    log_server_links(&web_address, &base_path);
 
     // Start TCP listener
     let listener = TcpListener::bind(&web_address)
@@ -47,5 +47,6 @@ fn log_server_links(web_address: &str, base_path: &str) {
     println!(
         "http://{web_address}{base_path}/move?die1=3&die2=1&p24=2&p19=-5&p17=-3&p13=5&p12=-5&p8=3&p6=5&p1=-2"
     );
+    // TODO: fix swagger-ui
     println!("http://{web_address}/swagger-ui");
 }
